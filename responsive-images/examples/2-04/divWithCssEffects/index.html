@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Udacity RI: div with CSS effects</title>
+
+  <link rel="icon" sizes="192x192" href="../../../images/icon.png">
+
+  <style>
+    body {
+      background: url(../../../images/dropbear.jpg);
+      margin: 0;
+    }
+    div {
+      background: linear-gradient(black, red);
+      border-radius: 100px;
+      box-shadow: 5px 5px 20px 0 black;
+      font-family: 'Lobster', cursive;
+      font-size: 10vw;
+      margin: 40vh 5vw;
+      padding: 20px;
+      position: absolute;
+      text-align: center;
+      width: 85vw;
+      animation:spin 2s;
+    }
+
+    @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+    @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+    @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+  </style>
+
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' </head>
+
+<body>
+  <div>Beware of drop bears</div>
+<script src="../../../js/lib/ga.js"></script>
+
+</body>
+
+</html>
