@@ -169,6 +169,7 @@ var dataCacheName = 'weatherData-v1';
     var statement = 'select * from weather.forecast where woeid=' + key;
     var url = 'https://query.yahooapis.com/v1/public/yql?format=json&q=' +
         statement;
+
     // Get data from cache
     if ('caches' in window) {
       /*
@@ -208,7 +209,7 @@ var dataCacheName = 'weatherData-v1';
     };
     request.open('GET', url);
     request.send();
-  };
+  }; 
 
   // Iterate all of the cards and attempt to get the latest forecast data
   app.updateForecasts = function() {
