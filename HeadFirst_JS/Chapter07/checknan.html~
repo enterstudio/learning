@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Testing typeof</title>
+  <script>
+var a = 0/0;
+var b = "food" * 1000;
+var c = Math.sqrt(-9); 
+console.log(isNaN(a)); 
+console.log(isNaN(b));
+console.log(isNaN(c));
+  </script>
+</head>
+<body>
+</body>
+</html>

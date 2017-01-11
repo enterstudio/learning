@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Testing Brad and Larry's code</title>
+  <script>
+
+// Brad's code
+function validate(phoneNumber){
+  if (phoneNumber.length !== 8) {
+    console.log("Incorrect length");
+  }
+  var first = phoneNumber.substring(0,3);
+  var second = phoneNumber.substring(4);
+  if (phoneNumber.charAt(3) !== "-" || isNaN(first) || isNaN(second)){
+    console.log("Incorrect digits");
+    return false;
+  }
+  console.log("Your number is: " + phoneNumber);
+  return true;
+}
+
+// Larry's code
+function validate2(phoneNumber) {
+  if (phoneNumber.length !== 8) {
+    console.log("Incorrect length");
+  }
+  
+  for (var i = 0; i < phoneNumber.length; i++) {
+    if (i === 3) {
+      if (phoneNumber.charAt(i) !== '-') {
+        console.log("need a dash");
+        return false;
+      }     
+    } else if (isNaN(phoneNumber.charAt(i))) {
+      console.log("not a number");
+      return false;
+    }    
+  }
+  console.log("your number is: " + phoneNumber);
+  return true;
+	
+}
+phnum = prompt("Provide phone number: ");
+validate2(phnum);
+
+
+  </script>
+</head>
+<body>
+</body>
+</html>

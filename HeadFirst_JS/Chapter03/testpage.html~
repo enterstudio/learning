@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Test page</title>
+    <script type="text/javascript" >
+    function doIt(param) {
+      param = 2;
+    }</script>
+  </head>
+  <body>
+    <p>Check console</h1>
+    <script>
+        var test = 1;
+        doIt(test);
+        console.log(test);
+    </script>
+  </body> 
+</html>

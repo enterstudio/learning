@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Testing typeof</title>
+  <script>
+var text = "YOU SHOULD NEVER SHOUT WHEN TYPING";
+var presentableText = text.toLowerCase();
+if (presentableText.length > 0) {
+alert(presentableText);
+}
+  </script>
+</head>
+<body>
+</body>
+</html>
